@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  background-color: rgb(16, 29, 69);
+}
+header {
+  background-color: rgb(67, 75, 97);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+ul {
+  display: flex;
+
+  list-style-type: none;
+
+  flex-wrap: wrap;
+}
+li {
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.about {
+  margin-top: 20vh;
+  display: flex;
+  align-items: center;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid black; */
+  height: 70vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 20px;
+}
+.intro {
+  padding: 20px;
+}
+img {
+  border-radius: 50%;
+  padding: 20px;
+}
+
+@media (width < 700px) {
+  .about {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media (width < 326px) {
+  .about {
+    margin-top: 30vh;
+  }
+}
+.item {
+  width: 20vw;
+  height: 30vh;
+  background-color: rgb(67, 75, 97);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 1px solid black;
+  margin: 0 5vw;
+  border-radius: 20px;
+  text-align: center;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  /* border: 1px solid black; */
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (width < 750px) {
+  .skills {
+    flex-direction: column;
+    /* display: block; */
+  }
+
+  .item {
+    align-items: center;
+    height: auto;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+  }
+}
+footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(95, 103, 142);
+  margin-top: 20vh;
+  text-align: center;
+  padding: 20px;
+}
